@@ -1,20 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './modules/login/login.component';
-
+import {MoviesComponent}from './movies.component'
 const routes: Routes = [
   {
-  path:'iniciar_sesion',
-  component:LoginComponent
+  path:'',
+  component:MoviesComponent
   },
-  // {
-  //   path:'populares',
-  //   loadChildren:()=> import {  } from './modules/movies'
-  // },
+
   {
     path:'',
     pathMatch:'full',
-    redirectTo:'iniciar_sesion'
+    redirectTo:''
 
 
   }
